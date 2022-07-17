@@ -1,19 +1,101 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
-    <link href="./styles.css" rel="stylesheet">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+	<head>
+		<meta charset="UTF-8" />
+		<!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"
+		/>
+		<link href="./styles.css" rel="stylesheet" />
+		<title>Hello World!</title>
+	</head>
+	<body>
+		<div id="container">
+			<form action="">
+				<label class="labels" for="health">Health</label>
+				<input
+					type="text"
+					id="health"
+					name="Health"
+					placeholder="10000"
+				/>
 
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
-  </body>
+				<label class="labels" for="health">Armor</label>
+				<input
+					type="text"
+					id="health"
+					name="Health"
+					placeholder="10000"
+				/>
+
+				<label class="labels" for="health">Void Resistance</label>
+				<input
+					type="text"
+					id="health"
+					name="Health"
+					placeholder="10000"
+				/>
+
+				<label class="labels" for="health">Water Resistance</label>
+				<input
+					type="text"
+					id="health"
+					name="Health"
+					placeholder="10000"
+				/>
+
+				<label class="labels" for="health">Frost Resistance</label>
+				<input
+					type="text"
+					id="health"
+					name="Health"
+					placeholder="10000"
+				/>
+
+				<label class="labels" for="health">Fire Resistance</label>
+				<input
+					type="text"
+					id="health"
+					name="Health"
+					placeholder="10000"
+				/>
+
+				<label class="labels" for="health">Nature Resistance</label>
+				<input
+					type="text"
+					id="health"
+					name="Health"
+					placeholder="10000"
+				/>
+
+				<label class="labels" for="health">Earth Resistance</label>
+				<input
+					type="text"
+					id="health"
+					name="Health"
+					placeholder="10000"
+				/>
+
+				<label class="labels" for="health">Lightning Resistance</label>
+				<input
+					type="text"
+					id="health"
+					name="Health"
+					placeholder="10000"
+				/>
+
+				<!-- <label for="country">Country</label>
+				<select id="country" name="country">
+					<option value="australia">Australia</option>
+					<option value="canada">Canada</option>
+					<option value="usa">USA</option>
+				</select> -->
+
+				<input type="submit" value="Calculate" />
+			</form>
+		</div>
+		<!-- You can also require other files to run in this process -->
+		<script src="./renderer.js"></script>
+	</body>
 </html>

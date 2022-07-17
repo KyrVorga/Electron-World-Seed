@@ -1,3 +1,54 @@
 /* styles.css */
 
 /* Add styles here to customize the appearance of your app */
+
+/* Style inputs */
+
+body {
+	background-color: #2c2c2c;
+}
+
+#container {
+	margin: 40px;
+}
+
+.labels {
+	color: #dadada;
+	margin: auto;
+}
+
+::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #868686;
+	opacity: 1; /* Firefox */
+}
+
+input[type="text"],
+select {
+	width: 100%;
+	padding: 6px 10px;
+	margin: 4px 0;
+	display: inline-block;
+	color: #dadada;
+	background-color: #686868;
+	border: 1px solid #d4823e;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+	width: 100%;
+	background-color: #d4823e;
+	color: white;
+	padding: 12px 10px;
+	margin: 4px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+/* Add a background color to the submit button on mouse-over */
+input[type="submit"]:hover {
+	background-color: #c4793c;
+}
